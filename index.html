@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 For my boyfiee Rehan/Kuze 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #ffe6e6 0%, #ffcccc 50%, #fff5f7 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        /* ===== SLIDE 1 ===== */
+        #slide1 {
+            background: linear-gradient(135deg, #ff6b9d 0%, #ffc4d6 100%);
+        }
+
+        .slide1-content {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 40px;
+            box-shadow: 0 20px 60px rgba(255, 107, 157, 0.3);
+            max-width: 500px;
+            animation: slideInDown 0.8s ease;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide1-content h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            color: #d63384;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide1-content p {
+            font-size: 1.2em;
+            color: #7a5c5c;
+            margin-bottom: 50px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            font-size: 1.1em;
+            font-weight: 700;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Quicksand', sans-serif;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-yes {
+            background: linear-gradient(135deg, #ff6b9d 0%, #d63384 100%);
+            color: white;
+        }
+
+        .btn-yes:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 30px rgba(255, 107, 157, 0.4);
+        }
+
+        .btn-yes:active {
+            transform: scale(0.98);
+        }
+
+        .btn-no {
+            background: linear-gradient(135deg, #ffc4d6 0%, #ffb3cc 100%);
+            color: #d63384;
+            position: absolute;
+        }
+
+        .btn-no:hover {
+            transform: scale(1.05);
+        }
+
+        /* ===== SLIDE 2 ===== */
+        #slide2 {
+            background: linear-gradient(135deg, #ffc4d6 0%, #ffb3cc 100%);
+        }
+
+        .slide2-content {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 40px;
+            box-shadow: 0 20px 60px rgba(255, 107, 157, 0.3);
+            max-width: 500px;
+            animation: slideInUp 0.8s ease;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide2-content h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+
+        .slide2-content p {
+            font-size: 1.3em;
+            color: #7a5c5c;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        /* ===== SLIDE 3 ===== */
+        #slide3 {
+            background: linear-gradient(135deg, #ff6b9d 0%, #ffc4d6 100%);
+        }
+
+        .slide3-content {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 40px;
+            box-shadow: 0 20px 60px rgba(255, 107, 157, 0.3);
+            max-width: 500px;
+            animation: slideInDown 0.8s ease;
+        }
+
+        .slide3-content h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            color: #d63384;
+            margin-bottom: 30px;
+        }
+
+        .slide3-content p {
+            font-size: 1.2em;
+            color: #7a5c5c;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .hearts-display {
+            font-size: 4em;
+            margin: 30px 0;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* ===== FLOATING HEARTS ===== */
+        .floating-heart {
+            position: fixed;
+            pointer-events: none;
+            animation: float 6s ease-in infinite;
+            font-size: 2.5em;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) translateX(0) scale(1);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(100px) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            .slide1-content, .slide2-content, .slide3-content {
+                padding: 40px 25px;
+                max-width: 90%;
+            }
+
+            .slide1-content h1 {
+                font-size: 3em;
+            }
+
+            .slide2-content h2, .slide3-content h2 {
+                font-size: 2.5em;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 1em;
+            }
+
+            .button-container {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1 -->
+    <div class="slide active" id="slide1">
+        <div class="slide1-content">
+            <h1>Do you love me?</h1>
+            <p>Harus yes!!</p>
+            <div class="button-container">
+                <button class="btn btn-yes" onclick="goToSlide2()">YES ❤️</button>
+                <button class="btn btn-no" id="noBtn" onmousemove="escapeNo(event)">NO 💔</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide" id="slide2">
+        <div class="slide2-content">
+            <h2>I'm so happy! 🥰</h2>
+            <p>I know you love me too! Aku juga sayang banget banget sama kamu. </p>
+            <button class="btn btn-yes" onclick="goToSlide3()" style="margin-top: 20px;">Next 💕</button>
+        </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide" id="slide3">
+        <div class="slide3-content">
+            <h2>I Love You! 💕</h2>
+            <div class="hearts-display">💕 💕 💕</div>
+            <p>Happy Valentine's Day! My boyfiee kuzee.</p>
+            <p>Thank you for making my life so beautiful and full of love. I promise to always cherish every moment with you,
+                Makasih udah menjadi part terindah aku selama ini,udah sabar nerima aku yang sangat moodtan ini.Aku ga tau kalau ga ketemu kamu 
+                sesepi apa hidup aku.Makasih ya udah  ga toxic sama aku dan selalu meminta maaf meskipun kamu tidak salah.Aku sangat sangat beruntung bisa ketemu kamu yang dikehidupan sekali ini.
+                Kalau ada kehidupan lain,aku juga bakalan milih kamu buat jadi pasangan aku.Love you</p>
+            <button class="btn btn-yes" onclick="location.reload()">Start Again 🎀</button>
+        </div>
+    </div>
+
+    <script>
+        // Function untuk geser ke slide 2
+        function goToSlide2() {
+            document.getElementById('slide1').classList.remove('active');
+            document.getElementById('slide2').classList.add('active');
+        }
+
+        // Function untuk geser ke slide 3
+        function goToSlide3() {
+            document.getElementById('slide2').classList.remove('active');
+            document.getElementById('slide3').classList.add('active');
+        }
+
+        // Function untuk tombol NO yang kabur
+        function escapeNo(event) {
+            const noBtn = document.getElementById('noBtn');
+            const maxX = window.innerWidth - noBtn.offsetWidth;
+            const maxY = window.innerHeight - noBtn.offsetHeight;
+            
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+            
+            noBtn.style.position = 'fixed';
+            noBtn.style.left = randomX + 'px';
+            noBtn.style.top = randomY + 'px';
+        }
+
+        // Generate floating hearts
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('floating-heart');
+            heart.innerText = '💕';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 8000);
+        }
+
+        // Create hearts periodically
+        setInterval(createFloatingHeart, 1500);
+    </script>
+
+</body>
+</html>
